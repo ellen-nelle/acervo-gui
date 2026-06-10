@@ -24,9 +24,9 @@ public class ConexaoDB {
 					"Arquivo config.properties não emcontrado!\n" + "Coloque-o em src/main/resources/");
 			
 			props.load(is);
-			url = props.getProperty("dp.url");
-			usuario = props.getProperty("dp.usuario");
-			senha = props.getProperty("dp.senha");
+			url = props.getProperty("db.url");
+			usuario = props.getProperty("db.usuario");
+			senha = props.getProperty("db.senha");
 			
 		}catch (IOException e) {
 			throw new RuntimeException("Erro ao ler config.properties: "+ e.getMessage());
